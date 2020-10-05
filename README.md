@@ -6,7 +6,6 @@ Command line utility designed to copy all files ending in '.jpg' from one file i
 
 ```
 py backupJPEGs.py 'C:/Users/Desktop/rawFromCamera' 'C:/Users/Desktop/New Folder'
-
 ```
 
 ## Contributing
