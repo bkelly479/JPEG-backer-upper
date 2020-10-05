@@ -1,6 +1,6 @@
 # JPEG Backer Upper
 
-Command line utility designed to copy all files ending in '.jpg' from one file into another. I use this tool to backup pictures I've taken into google photos as google photos will not backup the .ARW files my camera uses to store raw images. 
+Command line utility designed to copy all files ending in '.jpg' from one file into another, preserving directory structure. I use this tool to backup pictures I've taken into google photos as google photos will not backup the .ARW files my camera uses to store raw images. 
 
 ## Usage
 
