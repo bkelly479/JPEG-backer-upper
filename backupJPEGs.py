@@ -15,19 +15,26 @@ def dir_path(path):
         raise argparse.ArgumentTypeError(f"readable_dir:{path} is not a valid path")
 
 def copyAllFiles(inFile, outFile):
+    #gets all individual files within input folder
     files = os.listdir(inFile)
 
+    #if folder contains subfolders
     try:
+        #if no subfolders this will break the try
         for file in files:
             allImgs = os.listdir(inFile + '\\' + file)
 
+            #if subfolder does not exist within output folder create it
             if  not os.path.exists(outFile + '\\' + file):
                 os.mkdir(outFile + '\\' + file)
 
+            #copies each file which ends with .jpg
             for image in allImgs:
                 if image.endswith('.JPG'):
                     shutil.copy(inFile + '\\' + file + '\\' + image, outFile + '\\' + file)
                     print('image copied: ' + image)
+
+    #if no subfolders
     except:
         for image in files:
             if image.endswith('.JPG'):
